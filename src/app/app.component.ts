@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <div>
+      <div style="position: absolute; z-index: 1;bottom:0;width:100%;">
+        <panda></panda>
+      </div>
+      <div class="rainbow"></div>
+    </div>
+  `
 })
-export class AppComponent {
-  title = 'angular-storybook2';
-}
+export class AppComponent {}
