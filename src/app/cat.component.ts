@@ -1,18 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import faker from 'faker';
 
 @Component({
-  selector: 'panda',
+  selector: 'cat',
   template: `
     <div class="container" style="margin: 15px auto; text-align: center;">
-      <div *ngIf="image">
+      <div *ngIf="image" style="margin-top: 80px;">
         <img class="image" [src]="image" />
       </div>
-      <button type="button" (click)="onMoarClick()">MOAR</button>
+      <button type="button" (click)="onMoarClick()">{{label}}</button>
     </div>
   `
 })
-export class PandaComponent {
+export class CatComponent {
+  @Input() label = 'MOAR';
+
   image = '';
 
   ngOnInit() {

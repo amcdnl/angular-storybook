@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PandaComponent } from './panda.component';
+import { CatComponent } from './cat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PandaComponent
+    CatComponent
   ],
   imports: [
     BrowserModule,

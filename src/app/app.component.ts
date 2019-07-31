@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <div>
       <div style="position: absolute; z-index: 1;bottom:0;width:100%;">
-        <panda></panda>
+        <cat></cat>
       </div>
       <div class="rainbow"></div>
     </div>
